@@ -17,7 +17,8 @@ public class DataCandi {
             "Candi Jawi",
             "Candi Mendut",
             "Candi Sojiwan",
-            "Candi Jabung"
+            "Candi Jabung",
+            "Candi Cangkuang"
 
     };
 
@@ -36,6 +37,7 @@ public class DataCandi {
             "Magelang - Jawa Timur\n\nBelum bisa dipastikan kapan candi Mendut dibangun karena memang sumbernya belum akurat. Namun ada rujukan dari beberapa peneliti mengenai pembangunan candi mendut yaitu pada 824 M. Angka 824 M ini didapat oleh J.G. De Casparis atas dasar penemuan prasasti yang ditemukan di Karang Tengah yang menyebutkan bahwa raja Indra telah membangun bangunan suci bernama Venuwana.\n\nCasparis menyebutkan bahwa Venuwana berarti hutan bambu sedangkan daerah Candi Mendut sendiri dahulu adalah hutan bambu maka dapat disimpulkan bangunan suci tersebut adalah Candi Mendut. Diperkirakan candi mendut berusia lebih tua dari pada Candi Borobudur.",
             "Klaten - Jawa Tengah\n\nCandi Sojiwan atau Candi Sajiwan adalah salah satu dari banyaknya candi di Klaten. Candi ini terletak di Dukuh Kalongan, Desa Kebon Dalem Kidul, Kecamatan Prambanan, Kabupaten Klaten yang berada pada ketinggian 146 – 150 mdpl. Candi ini dianggap sebagai candi sebaran dari Candi Prambanan karena letaknya yang tak jauh dari Candi Prambanan yaitu sekitar dua kilometer ke arah tenggara.\n\nCandi Sojiwan memiliki luas yaitu 8.140 m persegi, luas bangunan utama candi memiliki luas 401,3 m persegi dan tinggi candi kurang lebih 27 m. Candi Sojiwan menghadap kearah barat. Terdapat dwarapala yang sudah rusak dan kini ditempatkan di pos penjagaan di komplek Candi Sojiwan. Pada bagian bawah candi terdapat ukiran relief kisah satwa Jataka sekitar 12 adegan mengelilingi dinding bawah candi. Cara membaca relief tersebut dengan membaca ke arah selatan (mapradaksina).",
             "Probolinggo - Jawa Timur\n\nCandi Jabung terletak di Desa Jabung, Kecamatan Paiton, Kabupaten Probolinggo, Jawa Timur. Candi Jabung merupakan peninggalan Kerajaan Majapahit yang dibangun pada tahun 1354 M. Pada kitab Negarakertagama dikatakan bahwa Raden Hayam Wuruk pernah mengunjungi Candi Jabung pada tahun 1359 M. Pada kitab Pararaton mengatakan bahwa diperkirakan candi ini dibangun untuk pemakaman Bhra Gundul salah seroang keluarga raja.\n\nCandi Jabung terdiri dari dua bangunan yaitu candi utama dan satu bangunan yang lebih kecil. Yang menarik dari candi ini adalah bahan dasarnya yang terbuat dari batu bata merah berkualitas tinggi yang diukir dalam bentuk relief. Struktur bangunan yang terbuat dari candi ini mampu bertahan hingga ratusan tahun.\n\nCandi utama terbuat dari batu bata merah dengan ukuran panjang 13,11 meter, lebar 9,58 meter dan tinggi 15,58 meter. Jika dilihat dari segi arsitekturnya, Candi Jabung memiliki keunikan yaitu bentuk tubuhnya yang berbentuk bulat (silinder) yang terdiri dari bagian kaki candi bertingkat tiga berbentuk persegi. Sedangkan pada bagian atap berbentuk stupa. Letak pintu bilik candi berada pada sisi sebelah barat, maka Candi Jabung menghadap arah barat.",
+            "Garut - Jawa Barat\n\nCandi Cangkuang terletak di Kampung Pulo, Desa Cangkuang, Kecamatan Leles, Kabupaten Garut. Desa Cangkuang dikelilingi oleh empat gunung diantaranya Gunung Keledong, Gunung Mandalawangi, Gunung Haruman, dan Gunung Guntur. Nama “Cangkuang” pada Candi Cangkuang diambil dari nama tanaman sejenis pandan (pandanus furcatus) yang banyak ditemukan di sekitar makam Embah Dalem Arief Muhammad, seorang leluhur dari Kampung Pulo.\n\nPemugaran Candi Cangkuang dilakukan pada tahun 1974-1975 sedangkan rekonstruksi dilakukan pada tahun 1976 yang meliputi kerangka badan, atap dan arca Syiwa serta dibuatkan joglo yang berfungsi menyimpan benda – benda temuan bersejarah di  seluruh Kabupaten Garut. Kegiatan pemugaran pada tahun 1974 telah menemukan bagian kaki candi. Kendala dalam rekonstruksi candi adalah hanya ditemukan 40% bagian candi aslinya, sehingga dibutuhkan batuan pengganti untuk merekonstruksi candi.\n\nDiduga Candi Cangkuang dibangun pada abad ke – 8 yang didasarkan pada tingkat kelapukan batuan dan kesederhanaan bentuk (tidak adanya relief). Setelah dipugar, Candi Cangkuang memiliki tinggi 8,5 meter dengan kaki candi berukuran 4,5 x 4,5 meter. Atap candi berbentuk piramid. Sepanjang tepian atap candi terdapat semacam mahkota kecil yang memiliki kemiripan dengan atap candi yang ada di Candi Gedong Songo.",
     };
 
     private static final int[] imageCandi = {
@@ -53,6 +55,9 @@ public class DataCandi {
             R.drawable.mendut,
             R.drawable.sojiwan,
             R.drawable.jabung,
+            R.drawable.cangkuang1,
+
+
     };
 
     static ArrayList<Candi> getListData(){
