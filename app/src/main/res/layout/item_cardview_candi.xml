@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/card_view"
-    android:layout_gravity="center"
-    app:cardBackgroundColor="#79A2A0">
+    android:layout_gravity="center">
 
     <RelativeLayout
         android:layout_width="match_parent"
