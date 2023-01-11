@@ -74,13 +74,14 @@
 
                 <Button
                     android:id="@+id/btnShare"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_below="@+id/tvDesc"
                     android:layout_margin="15dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_centerInParent="true"
                     android:text="Share" />
 
             </RelativeLayout>
