@@ -31,12 +31,14 @@ public class CardViewCandiAdapter extends RecyclerView.Adapter<CardViewCandiAdap
 
     @NonNull
     @Override
+    //menghubungkan layout item candi ke adapter
     public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_candi, parent, false);
         return new CardViewHolder(view);
     }
 
     @Override
+    //menghubungkan id ke data
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         Candi candi = listCandi.get(position);
         Glide.with(holder.itemView.getContext())
@@ -67,11 +69,14 @@ public class CardViewCandiAdapter extends RecyclerView.Adapter<CardViewCandiAdap
         return listCandi.size();
     }
 
+    //membuat variabel di viewholder
     public class CardViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imgPhoto;
         TextView tvNama, tvDetail;
         Button btnBaca;
+
+        //menghubungkan id di layout ke viewholder
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.iv_item_photo);
