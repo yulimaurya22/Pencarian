@@ -64,6 +64,7 @@ public class CardViewCandiAdapter extends RecyclerView.Adapter<CardViewCandiAdap
         });
     }
 
+    // mengembalikan jumlah item data yang tersedia untuk ditampilkan
     @Override
     public int getItemCount() {
         return listCandi.size();
