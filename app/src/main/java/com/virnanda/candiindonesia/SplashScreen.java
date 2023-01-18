@@ -32,10 +32,10 @@ public class SplashScreen extends AppCompatActivity {
         decorView.setSystemUiVisibility(decorView.SYSTEM_UI_FLAG_FULLSCREEN);
 
         if (getSupportActionBar() != null){
-            getSupportActionBar().hide();
+            getSupportActionBar().hide(); //menghilangkan actionbar
         }
 
-        //initialize handler
+        //Membuat handler untuk mendelay sejenak selama 2000ms / 2 detik
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
