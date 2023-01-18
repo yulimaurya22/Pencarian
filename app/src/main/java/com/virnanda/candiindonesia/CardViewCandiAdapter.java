@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 public class CardViewCandiAdapter extends RecyclerView.Adapter<CardViewCandiAdapter.CardViewHolder> {
 
+
     private ArrayList<Candi> listCandi;
     private OnItemClickCallback onItemClickCallback;
 
@@ -31,7 +32,7 @@ public class CardViewCandiAdapter extends RecyclerView.Adapter<CardViewCandiAdap
 
     @NonNull
     @Override
-    //menghubungkan layout item candi ke adapter
+    //menghubungkan mainactivity dengan cardview
     public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_candi, parent, false);
         return new CardViewHolder(view);
