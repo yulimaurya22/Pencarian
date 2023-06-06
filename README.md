@@ -1,4 +1,5 @@
 # Sejarah-Candi-Indonesia-App
-Kelompok 5
-Karisma Arum Virnanda (202069040007)
+Anggota Kelompok 2
+Yulia Magfirah Putri (202069040036)
 May Riska Putri A (202069040008)
+Khoirotul Fitriyah (202069040019)
