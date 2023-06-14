@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -63,5 +64,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         alertDialog.show();
+    }
+
+    public void pemberitahuan(View view) {
+        Intent intent = new Intent(MainActivity.this,Notifikasi.class);
+        startActivity(intent);
     }
 }
