@@ -2,6 +2,7 @@ package com.virnanda.candiindonesia;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class Notifikasi extends AppCompatActivity {
 
@@ -18,6 +20,10 @@ public class Notifikasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifikasi);
+        Button btn = findViewById(R.id.btn);
+        btn.setOnClickListener(view -> {
+        createNotif();
+    });
     }
     private void createNotif(){    {
         String id = "Gambar_Candi_Baru";
@@ -35,7 +41,7 @@ public class Notifikasi extends AppCompatActivity {
                manager.createNotificationChannel(channel);
            }
        }
-        Intent notificationIntent = new Intent(this,Notifikasi.class);
+        Intent notificationIntent = new Intent(this,NotifikasiActivity.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent contentIntent =PendingIntent.getActivity(this,0,notificationIntent,0);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,id)
@@ -50,6 +56,8 @@ public class Notifikasi extends AppCompatActivity {
                 .setVibrate(new long []{100,1000,200,300})
                 .setAutoCancel(false)//true touch on notification menu dismissed, but swipe to dismiss
                 .setTicker("Notification");
-
+builder.setContentIntent(contentIntent);
+NotificationManagerCompat m = NotificationManagerCompat.from(getApplicationContext());
+m.notify(1,builder.build());
 
     }
