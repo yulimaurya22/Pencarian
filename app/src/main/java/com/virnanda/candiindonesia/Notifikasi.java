@@ -8,6 +8,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -39,5 +40,10 @@ public class Notifikasi extends AppCompatActivity {
         PendingIntent contentIntent =PendingIntent.getActivity(this,0,notificationIntent,0);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,id)
                 .setSmallIcon(R.drawable.icon)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.bg))
+                .setStyle(new NotificationCompat.BigTextStyle()
+                        .bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.bg))
+                        .bigLargeIcone(null))
+
 
     }
