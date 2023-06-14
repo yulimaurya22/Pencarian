@@ -44,6 +44,12 @@ public class Notifikasi extends AppCompatActivity {
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.bg))
                         .bigLargeIcone(null))
+                .setContentTitle("Title")
+                .setContentText("Your text description")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setVibrate(new long []{100,1000,200,300})
+                .setAutoCancel(false)//true touch on notification menu dismissed, but swipe to dismiss
+                .setTicker("Notification");
 
 
     }
